@@ -1,0 +1,48 @@
+footer {
+	background:#000;
+	min-height:450px;
+	width:100%;
+	color:#fff;
+	display:table;
+
+	.content-footer {
+		max-width: 768px;
+		display: table-cell;
+		vertical-align: middle;
+		margin:0 auto;
+		text-align: center;
+		position: relative;
+		
+		i {
+			background: url(../images/place.svg) no-repeat;
+			display: block;
+			width:45px;
+			height: 65px;
+			margin:auto;
+			position:absolute;
+			left:0;
+			right: 0;
+			top:30px;
+		}
+		
+		h2 {
+			font-size: 40px;
+			font-family: "rajdhani-medium";
+		}
+		span , a {
+			display: block;
+			text-decoration: none;
+			color:#FFF;
+			font-size:20px;
+		}
+
+		span{
+			font-family: "rajdhani-light";
+			margin:15px 0px 5px 0px;
+		}
+		a {
+			font-family: "rajdhani-medium";
+			margin-bottom: 50px;
+		}
+	}
+}

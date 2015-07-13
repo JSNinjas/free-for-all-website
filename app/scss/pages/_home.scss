@@ -1,0 +1,85 @@
+body {
+	font-family: "rajdhani-regular";
+}
+
+.content {
+	max-width: 768px;
+	margin:100px auto 0 auto;
+	text-align: center;
+	
+	p {
+		font-size:18px;
+		line-height: 39px;
+	}
+
+	button {
+		background: #000;
+		border-radius: 75px;
+		width: 200px;
+		height: 200px;
+		border:none;
+		outline: none;
+		color: $yellow;
+		font-size: 15px;
+		font-family: "rajdhani-bold";
+
+		img {
+			width: 70px;
+			margin:20px 0px 15px 0px;
+		}
+	}
+}
+
+
+.team {
+	@extend .content;
+
+	img { 
+		margin-top:30px;
+		width: 200px;
+		height: 200px;
+		border-radius:75px;
+	}
+	.member {
+		display: inline-block;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+		h2 {
+			font-family: "rajdhani-bold";
+			margin: 13px 0px 7px 0px;
+			font-size:16px;
+		}
+		span {
+			color: #AFAFAF;
+			font-size: 13px;
+		}
+	}
+}
+
+.program {
+	@extend .content;
+
+	ul li {
+		margin: 60px 0px 0px 0px;
+		h2 {
+		 	font-size: 25px;
+		 	font-family: "rajdhani-bold";
+		}
+		span {
+			color: #AFAFAF;
+			width: 100%;
+			font-size:18px;
+			font-family: "rajdhani-bold";
+			padding-bottom: 40px;
+			border-bottom: 1px solid #EBEBEB;
+			display: inline-block;
+		}
+
+		p {
+			margin-top: 20px;
+		}
+	}
+}
