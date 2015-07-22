@@ -461,7 +461,7 @@
   padding: 10px 20px;
   font-size: 15px;
   outline: none;
-  font-family: "rajdhani-bold"; }
+  font-weight: 700; }
 
 /* line 6, ../scss/base/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -506,7 +506,7 @@ table {
 /* line 1, ../scss/base/_base.scss */
 body {
   font-weight: 500;
-  font-family: "museo500", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   color: #000;
   overflow-x: hidden; }
 
@@ -540,22 +540,6 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
-@font-face {
-  font-family: "rajdhani-bold";
-  src: url("/font/rajdhani-bold-webfont.eot");
-  src: url("/font/rajdhani-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/font/rajdhani-bold-webfont.woff") format("woff"), url("/font/rajdhani-bold-webfont.ttf") format("truetype"), url("/font/rajdhani-bold-webfont.svg#rajdhani-bold") format("svg"); }
-@font-face {
-  font-family: "rajdhani-light";
-  src: url("/font/rajdhani-light-webfont.eot");
-  src: url("/font/rajdhani-light-webfont.eot?#iefix") format("embedded-opentype"), url("/font/rajdhani-light-webfont.woff") format("woff"), url("/font/rajdhani-light-webfont.ttf") format("truetype"), url("/font/rajdhani-light-webfont.svg#rajdhani-light") format("svg"); }
-@font-face {
-  font-family: "rajdhani-medium";
-  src: url("/font/rajdhani-medium-webfont.eot");
-  src: url("/font/rajdhani-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/font/rajdhani-medium-webfont.woff") format("woff"), url("/font/rajdhani-medium-webfont.ttf") format("truetype"), url("/font/rajdhani-medium-webfont.svg#rajdhani-medium") format("svg"); }
-@font-face {
-  font-family: "rajdhani-regular";
-  src: url("/font/rajdhani-regular-webfont.eot");
-  src: url("/font/rajdhani-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/font/rajdhani-regular-webfont.woff") format("woff"), url("/font/rajdhani-regular-webfont.ttf") format("truetype"), url("/font/rajdhani-regular-webfont.svg#rajdhani-regular") format("svg"); }
 /* line 1, ../scss/layout/_header.scss */
 header {
   height: 80px;
@@ -578,7 +562,7 @@ header {
       text-decoration: none;
       color: #000;
       margin-right: 50px;
-      font-family: "rajdhani-medium"; }
+      font-weight: 600; }
 
 /* line 30, ../scss/layout/_header.scss */
 .title {
@@ -650,7 +634,7 @@ footer {
     /* line 28, ../scss/layout/_footer.scss */
     footer .content-footer h2 {
       font-size: 40px;
-      font-family: "rajdhani-medium"; }
+      font-weight: 600; }
     /* line 32, ../scss/layout/_footer.scss */
     footer .content-footer span, footer .content-footer a {
       display: block;
@@ -659,27 +643,23 @@ footer {
       font-size: 20px; }
     /* line 39, ../scss/layout/_footer.scss */
     footer .content-footer span {
-      font-family: "rajdhani-light";
+      font-weight: 300;
       margin: 15px 0px 5px 0px; }
     /* line 43, ../scss/layout/_footer.scss */
     footer .content-footer a {
-      font-family: "rajdhani-medium";
+      font-weight: 600;
       margin-bottom: 50px; }
 
-/* line 1, ../scss/pages/_home.scss */
-body {
-  font-family: "rajdhani-regular"; }
-
-/* line 5, ../scss/pages/_home.scss */
+/* line 3, ../scss/pages/_home.scss */
 .content, .team, .program {
   max-width: 768px;
   margin: 100px auto 0 auto;
   text-align: center; }
-  /* line 10, ../scss/pages/_home.scss */
+  /* line 8, ../scss/pages/_home.scss */
   .content p, .team p, .program p {
     font-size: 18px;
     line-height: 39px; }
-  /* line 15, ../scss/pages/_home.scss */
+  /* line 13, ../scss/pages/_home.scss */
   .content button, .team button, .program button {
     background: #000;
     border-radius: 75px;
@@ -689,52 +669,52 @@ body {
     outline: none;
     color: #FFE600;
     font-size: 15px;
-    font-family: "rajdhani-bold"; }
-    /* line 26, ../scss/pages/_home.scss */
+    font-weight: 700; }
+    /* line 24, ../scss/pages/_home.scss */
     .content button img, .team button img, .program button img {
       width: 70px;
       margin: 20px 0px 15px 0px; }
 
-/* line 37, ../scss/pages/_home.scss */
+/* line 35, ../scss/pages/_home.scss */
 .team img {
   margin-top: 30px;
   width: 200px;
   height: 200px;
   border-radius: 75px; }
-/* line 43, ../scss/pages/_home.scss */
+/* line 41, ../scss/pages/_home.scss */
 .team .member {
   display: inline-block;
   margin-right: 20px; }
-  /* line 47, ../scss/pages/_home.scss */
+  /* line 45, ../scss/pages/_home.scss */
   .team .member:last-child {
     margin-right: 0px; }
-  /* line 50, ../scss/pages/_home.scss */
+  /* line 48, ../scss/pages/_home.scss */
   .team .member h2 {
-    font-family: "rajdhani-bold";
+    font-weight: 700;
     margin: 13px 0px 7px 0px;
     font-size: 16px; }
-  /* line 55, ../scss/pages/_home.scss */
+  /* line 53, ../scss/pages/_home.scss */
   .team .member span {
     color: #AFAFAF;
     font-size: 13px; }
 
-/* line 65, ../scss/pages/_home.scss */
+/* line 63, ../scss/pages/_home.scss */
 .program ul li {
   margin: 60px 0px 0px 0px; }
-  /* line 67, ../scss/pages/_home.scss */
+  /* line 65, ../scss/pages/_home.scss */
   .program ul li h2 {
     font-size: 25px;
-    font-family: "rajdhani-bold"; }
-  /* line 71, ../scss/pages/_home.scss */
+    font-weight: 700; }
+  /* line 69, ../scss/pages/_home.scss */
   .program ul li span {
     color: #AFAFAF;
     width: 100%;
     font-size: 18px;
-    font-family: "rajdhani-bold";
+    font-weight: 700;
     padding-bottom: 40px;
     border-bottom: 1px solid #EBEBEB;
     display: inline-block; }
-  /* line 81, ../scss/pages/_home.scss */
+  /* line 79, ../scss/pages/_home.scss */
   .program ul li p {
     margin-top: 20px; }
 

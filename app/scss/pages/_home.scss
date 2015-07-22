@@ -1,6 +1,4 @@
-body {
-	font-family: "rajdhani-regular";
-}
+
 
 .content {
 	max-width: 768px;
@@ -21,7 +19,7 @@ body {
 		outline: none;
 		color: $yellow;
 		font-size: 15px;
-		font-family: "rajdhani-bold";
+		font-weight:700;
 
 		img {
 			width: 70px;
@@ -48,7 +46,7 @@ body {
 			margin-right: 0px;
 		}
 		h2 {
-			font-family: "rajdhani-bold";
+			font-weight: 700;
 			margin: 13px 0px 7px 0px;
 			font-size:16px;
 		}
@@ -66,13 +64,13 @@ body {
 		margin: 60px 0px 0px 0px;
 		h2 {
 		 	font-size: 25px;
-		 	font-family: "rajdhani-bold";
+		 	font-weight: 700;
 		}
 		span {
 			color: #AFAFAF;
 			width: 100%;
 			font-size:18px;
-			font-family: "rajdhani-bold";
+			font-weight: 700;
 			padding-bottom: 40px;
 			border-bottom: 1px solid #EBEBEB;
 			display: inline-block;
