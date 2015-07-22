@@ -1,8 +1,6 @@
-
-
 .content {
 	max-width: 768px;
-	margin:100px auto 0 auto;
+	margin:150px auto 0 auto;
 	text-align: center;
 	
 	p {
@@ -28,7 +26,9 @@
 	}
 }
 
-
+.about {
+	margin-top:220px;
+}
 .team {
 	@extend .content;
 
@@ -80,4 +80,14 @@
 			margin-top: 20px;
 		}
 	}
+}
+
+#about .seperator, #program .seperator {
+	height:150px;
+	margin:50px auto;
+}
+#team .seperator {
+	height:200px;
+	margin:50px auto 0px auto;
+
 }

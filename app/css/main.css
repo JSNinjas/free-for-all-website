@@ -461,7 +461,34 @@
   padding: 10px 20px;
   font-size: 15px;
   outline: none;
-  font-weight: 700; }
+  display: inline-block;
+  font-weight: 700;
+  font-family: 'Rajdhani', sans-serif; }
+
+/* line 19, ../scss/helpers/_utilities.scss */
+.seperator {
+  position: relative;
+  height: 295px;
+  width: 2px;
+  margin: 0 auto; }
+  /* line 25, ../scss/helpers/_utilities.scss */
+  .seperator span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #FFE600; }
+  /* line 32, ../scss/helpers/_utilities.scss */
+  .seperator i {
+    position: absolute;
+    bottom: -50px;
+    color: #000;
+    font-size: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: -15px; }
 
 /* line 6, ../scss/base/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -543,32 +570,34 @@ The `sprites` mixin generates identical output to the CSS template
 /* line 1, ../scss/layout/_header.scss */
 header {
   height: 80px;
-  padding: 0px 50px;
+  padding: 50px 50px 0px 50px;
   position: relative;
+  top: -20px;
   z-index: 99; }
-  /* line 7, ../scss/layout/_header.scss */
+  /* line 8, ../scss/layout/_header.scss */
   header .logo {
     float: left; }
-    /* line 10, ../scss/layout/_header.scss */
+    /* line 11, ../scss/layout/_header.scss */
     header .logo img {
-      max-width: 140px; }
-  /* line 15, ../scss/layout/_header.scss */
+      max-width: 200px; }
+  /* line 16, ../scss/layout/_header.scss */
   header nav {
     position: absolute;
-    bottom: 25px;
-    padding-left: 200px; }
-    /* line 20, ../scss/layout/_header.scss */
+    bottom: 0px;
+    left: 25%; }
+    /* line 21, ../scss/layout/_header.scss */
     header nav a {
       text-decoration: none;
       color: #000;
       margin-right: 50px;
-      font-weight: 600; }
+      font-weight: 600;
+      font-size: 14px; }
 
-/* line 30, ../scss/layout/_header.scss */
+/* line 32, ../scss/layout/_header.scss */
 .title {
   font-size: 35px; }
 
-/* line 33, ../scss/layout/_header.scss */
+/* line 35, ../scss/layout/_header.scss */
 .sub-title {
   font-size: 15px;
   color: #AFAFAF;
@@ -576,34 +605,41 @@ header {
 
 /* line 1, ../scss/layout/_banner.scss */
 .banner {
-  min-height: 630px;
+  height: 700px;
   background: url(../images/bg.jpg) no-repeat;
   position: relative;
-  color: #FFF; }
-  /* line 7, ../scss/layout/_banner.scss */
+  color: #FFF;
+  background-size: cover; }
+  /* line 8, ../scss/layout/_banner.scss */
   .banner img {
     width: 125px; }
 
-/* line 11, ../scss/layout/_banner.scss */
+/* line 12, ../scss/layout/_banner.scss */
 .banner-content {
   color: #FFF;
   max-width: 768px;
   position: absolute;
-  top: 0;
+  top: -40%;
   bottom: 0;
   left: 0;
   right: 0;
   height: 200px;
   margin: auto;
   text-align: center; }
-  /* line 23, ../scss/layout/_banner.scss */
+  /* line 24, ../scss/layout/_banner.scss */
   .banner-content h2 {
     color: #FFE600;
     font-size: 50px; }
   /* line 28, ../scss/layout/_banner.scss */
+  .banner-content p {
+    margin: 25px 0px 50px 0px; }
+  /* line 32, ../scss/layout/_banner.scss */
   .banner-content button, .banner-content img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto 50px auto; }
+  /* line 37, ../scss/layout/_banner.scss */
+  .banner-content button {
+    margin: 0 auto 20px auto; }
 
 /* line 1, ../scss/layout/_footer.scss */
 footer {
@@ -634,32 +670,39 @@ footer {
     /* line 28, ../scss/layout/_footer.scss */
     footer .content-footer h2 {
       font-size: 40px;
-      font-weight: 600; }
-    /* line 32, ../scss/layout/_footer.scss */
+      font-weight: 400;
+      margin: 60px auto 0px auto; }
+    /* line 33, ../scss/layout/_footer.scss */
     footer .content-footer span, footer .content-footer a {
       display: block;
       text-decoration: none;
       color: #FFF;
       font-size: 20px; }
-    /* line 39, ../scss/layout/_footer.scss */
+    /* line 40, ../scss/layout/_footer.scss */
     footer .content-footer span {
       font-weight: 300;
       margin: 15px 0px 5px 0px; }
-    /* line 43, ../scss/layout/_footer.scss */
+    /* line 44, ../scss/layout/_footer.scss */
     footer .content-footer a {
       font-weight: 600;
       margin-bottom: 50px; }
+    /* line 48, ../scss/layout/_footer.scss */
+    footer .content-footer .btn-yellow.btn-yellow {
+      display: inline-block;
+      color: #000;
+      padding: 10px 10px;
+      font-size: 18px; }
 
-/* line 3, ../scss/pages/_home.scss */
+/* line 1, ../scss/pages/_home.scss */
 .content, .team, .program {
   max-width: 768px;
-  margin: 100px auto 0 auto;
+  margin: 150px auto 0 auto;
   text-align: center; }
-  /* line 8, ../scss/pages/_home.scss */
+  /* line 6, ../scss/pages/_home.scss */
   .content p, .team p, .program p {
     font-size: 18px;
     line-height: 39px; }
-  /* line 13, ../scss/pages/_home.scss */
+  /* line 11, ../scss/pages/_home.scss */
   .content button, .team button, .program button {
     background: #000;
     border-radius: 75px;
@@ -670,10 +713,14 @@ footer {
     color: #FFE600;
     font-size: 15px;
     font-weight: 700; }
-    /* line 24, ../scss/pages/_home.scss */
+    /* line 22, ../scss/pages/_home.scss */
     .content button img, .team button img, .program button img {
       width: 70px;
       margin: 20px 0px 15px 0px; }
+
+/* line 29, ../scss/pages/_home.scss */
+.about {
+  margin-top: 220px; }
 
 /* line 35, ../scss/pages/_home.scss */
 .team img {
@@ -717,5 +764,15 @@ footer {
   /* line 79, ../scss/pages/_home.scss */
   .program ul li p {
     margin-top: 20px; }
+
+/* line 85, ../scss/pages/_home.scss */
+#about .seperator, #program .seperator {
+  height: 150px;
+  margin: 50px auto; }
+
+/* line 89, ../scss/pages/_home.scss */
+#team .seperator {
+  height: 200px;
+  margin: 50px auto 0px auto; }
 
 /*# sourceMappingURL=main.css.map */

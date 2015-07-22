@@ -1,27 +1,29 @@
 header {
 	height: 	80px;
-	padding: 	0px 50px;
+	padding: 	50px 50px 0px 50px;
 	position:   relative;
+	top:-20px;
 	z-index: 	99;
 
 	.logo {
 		float: left;
 
 		img {
-			max-width: 140px;
+			max-width: 200px;
 		}
 	}
 	
 	nav {
 		position: absolute;
-		bottom: 25px;
-		padding-left: 200px;
+		bottom: 0px;
+		left:25%;
 
 		a {
 			text-decoration: none;
 			color: #000;
 			margin-right: 50px;
 			font-weight: 600;
+			font-size: 14px;
 		}
 
 	}

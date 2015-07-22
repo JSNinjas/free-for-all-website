@@ -11,5 +11,34 @@
 	padding:10px 20px;
 	font-size:15px;
 	outline: none;
+	display:inline-block;
 	font-weight:700;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.seperator {
+	position:relative;
+	height:295px;
+	width: 2px;
+	margin:0 auto;
+
+	span {
+		display: block;
+		height: 100%;
+		width: 100%;
+		background:$yellow;
+	}
+
+	i {
+		position: absolute;
+		bottom: -50px;
+		color: #000;
+		font-size: 30px;
+		border: 1px solid #000;
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		margin-left: -15px;
+	}
 }

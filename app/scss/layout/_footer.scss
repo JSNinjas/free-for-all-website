@@ -27,7 +27,8 @@ footer {
 		
 		h2 {
 			font-size: 40px;
-			font-weight: 600;
+			font-weight: 400;
+			margin:60px auto 0px auto;
 		}
 		span , a {
 			display: block;
@@ -43,6 +44,12 @@ footer {
 		a {
 			font-weight: 600;
 			margin-bottom: 50px;
+		}
+		.btn-yellow.btn-yellow  {
+			display: inline-block;
+			color:#000;
+			padding: 10px 10px;
+			font-size: 18px;
 		}
 	}
 }
