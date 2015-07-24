@@ -22,13 +22,13 @@ footer {
 			position:absolute;
 			left:0;
 			right: 0;
-			top:30px;
+			top:50px;
 		}
 		
 		h2 {
 			font-size: 40px;
 			font-weight: 400;
-			margin:60px auto 0px auto;
+			margin:160px auto 0px auto;
 		}
 		span , a {
 			display: block;
@@ -50,6 +50,34 @@ footer {
 			color:#000;
 			padding: 10px 10px;
 			font-size: 18px;
+		}
+
+	}
+
+	.social {
+		margin-top: 5%;
+		a {
+			display: inline-block;
+			margin-right: 10px;
+			opacity: 0.6;
+			transition:all 0.5s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
+		.facebook {
+			@include sprite($fb);
+		}
+		.github {
+			@include sprite($git);
+		}
+		.twitter {
+			@include sprite($tw);
 		}
 	}
 }

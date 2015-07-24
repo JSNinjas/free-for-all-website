@@ -666,12 +666,12 @@ footer {
       position: absolute;
       left: 0;
       right: 0;
-      top: 30px; }
+      top: 50px; }
     /* line 28, ../scss/layout/_footer.scss */
     footer .content-footer h2 {
       font-size: 40px;
       font-weight: 400;
-      margin: 60px auto 0px auto; }
+      margin: 160px auto 0px auto; }
     /* line 33, ../scss/layout/_footer.scss */
     footer .content-footer span, footer .content-footer a {
       display: block;
@@ -692,6 +692,39 @@ footer {
       color: #000;
       padding: 10px 10px;
       font-size: 18px; }
+  /* line 57, ../scss/layout/_footer.scss */
+  footer .social {
+    margin-top: 5%; }
+    /* line 59, ../scss/layout/_footer.scss */
+    footer .social a {
+      display: inline-block;
+      margin-right: 10px;
+      opacity: 0.6;
+      transition: all 0.5s ease; }
+      /* line 65, ../scss/layout/_footer.scss */
+      footer .social a:hover {
+        opacity: 1; }
+      /* line 69, ../scss/layout/_footer.scss */
+      footer .social a:last-child {
+        margin-right: 0px; }
+    /* line 73, ../scss/layout/_footer.scss */
+    footer .social .facebook {
+      background-image: url(../../images/sprite.png);
+      background-position: 0px 0px;
+      width: 36px;
+      height: 36px; }
+    /* line 76, ../scss/layout/_footer.scss */
+    footer .social .github {
+      background-image: url(../../images/sprite.png);
+      background-position: -46px 0px;
+      width: 36px;
+      height: 36px; }
+    /* line 79, ../scss/layout/_footer.scss */
+    footer .social .twitter {
+      background-image: url(../../images/sprite.png);
+      background-position: 0px -46px;
+      width: 36px;
+      height: 36px; }
 
 /* line 1, ../scss/pages/_home.scss */
 .content, .team, .program {
