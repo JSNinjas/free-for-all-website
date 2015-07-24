@@ -3,4 +3,8 @@ body {
   font-family: 'Rajdhani', sans-serif;
   color: #000;
   overflow-x: hidden;
+
+  &.sticky-header {
+    padding-top: 130px;
+  }
 }

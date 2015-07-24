@@ -52,6 +52,7 @@ footer {
 			border-radius: 2px;
 			font-weight:700;
 			font-size: 15px;
+			transition:all 0.5s ease;
 
 			&:hover {
 				cursor: pointer;
@@ -87,5 +88,10 @@ footer {
 		.twitter {
 			@include sprite($tw);
 		}
+	}
+
+	.designer, .designer a {
+		font-size: 14px;
+		color: #333;
 	}
 }

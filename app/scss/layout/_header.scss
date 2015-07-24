@@ -16,7 +16,7 @@ header {
 	nav {
 		position: absolute;
 		bottom: 0px;
-		left:25%;
+		left: 306px;
 		background-color: #fff;
 		z-index: 2;
 
@@ -31,7 +31,18 @@ header {
 				color: $yellow;
 			}
 		}
+	}
 
+	.sticky-header & {
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		background-color: #fff;
+		border-bottom: 1px solid #f0f0f0;
+
+		nav {
+			margin-bottom: 20px;
+		}
 	}
 }
 

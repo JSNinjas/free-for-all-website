@@ -491,34 +491,30 @@
     line-height: 30px;
     margin-left: -15px; }
 
-@media all and (max-width: 1084px) and (min-width: 651px) {
-  /* line 3, ../scss/helpers/_media.scss */
-  header nav {
-    left: 271px !important; } }
 @media all and (max-width: 650px) {
-  /* line 11, ../scss/helpers/_media.scss */
+  /* line 3, ../scss/helpers/_media.scss */
   header {
     padding: 30px 0px 0px 5px !important; }
-    /* line 14, ../scss/helpers/_media.scss */
+    /* line 6, ../scss/helpers/_media.scss */
     header .logo img {
       max-width: 145px !important; }
-    /* line 17, ../scss/helpers/_media.scss */
+    /* line 9, ../scss/helpers/_media.scss */
     header nav {
       right: 0;
       left: initial !important;
       bottom: -20px !important; }
-      /* line 22, ../scss/helpers/_media.scss */
+      /* line 14, ../scss/helpers/_media.scss */
       header nav a {
         display: block;
         margin-bottom: 5px; }
 
-  /* line 29, ../scss/helpers/_media.scss */
+  /* line 21, ../scss/helpers/_media.scss */
   .content p, .team p, .program p, .team p, .program p {
     font-size: 16px !important;
     line-height: 35px !important;
     padding: 0px 10px; }
 
-  /* line 34, ../scss/helpers/_media.scss */
+  /* line 26, ../scss/helpers/_media.scss */
   .nav-sep {
     display: none; } }
 /* line 6, ../scss/base/_reset.scss */
@@ -567,6 +563,9 @@ body {
   font-family: 'Rajdhani', sans-serif;
   color: #000;
   overflow-x: hidden; }
+  /* line 7, ../scss/base/_base.scss */
+  body.sticky-header {
+    padding-top: 130px; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -624,7 +623,7 @@ header {
   header nav {
     position: absolute;
     bottom: 0px;
-    left: 25%;
+    left: 306px;
     background-color: #fff;
     z-index: 2; }
     /* line 23, ../scss/layout/_header.scss */
@@ -637,18 +636,28 @@ header {
       /* line 30, ../scss/layout/_header.scss */
       header nav a:hover {
         color: #FFE600; }
+  /* line 36, ../scss/layout/_header.scss */
+  .sticky-header header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0; }
+    /* line 43, ../scss/layout/_header.scss */
+    .sticky-header header nav {
+      margin-bottom: 20px; }
 
-/* line 38, ../scss/layout/_header.scss */
+/* line 49, ../scss/layout/_header.scss */
 .title {
   font-size: 35px; }
 
-/* line 41, ../scss/layout/_header.scss */
+/* line 52, ../scss/layout/_header.scss */
 .sub-title {
   font-size: 15px;
   color: #AFAFAF;
   margin: 15px 0px 20px 0px; }
 
-/* line 47, ../scss/layout/_header.scss */
+/* line 58, ../scss/layout/_header.scss */
 .nav-sep {
   position: absolute;
   right: 0;
@@ -697,8 +706,9 @@ header {
     display: inline-block;
     margin: 0 auto 20px auto;
     border-radius: 2px;
-    color: #000; }
-    /* line 43, ../scss/layout/_banner.scss */
+    color: #000;
+    transition: all 0.5s ease; }
+    /* line 44, ../scss/layout/_banner.scss */
     .banner-content .what-is:hover {
       cursor: pointer;
       color: #FFE600;
@@ -756,45 +766,50 @@ footer {
       padding: 10px 10px;
       border-radius: 2px;
       font-weight: 700;
-      font-size: 15px; }
-      /* line 56, ../scss/layout/_footer.scss */
+      font-size: 15px;
+      transition: all 0.5s ease; }
+      /* line 57, ../scss/layout/_footer.scss */
       footer .content-footer .btn-yellow.btn-yellow:hover {
         cursor: pointer;
         color: #FFE600;
         background-color: #4a4a4a; }
-  /* line 65, ../scss/layout/_footer.scss */
+  /* line 66, ../scss/layout/_footer.scss */
   footer .social {
     margin-top: 5%; }
-    /* line 67, ../scss/layout/_footer.scss */
+    /* line 68, ../scss/layout/_footer.scss */
     footer .social a {
       display: inline-block;
       margin-right: 10px;
       opacity: 0.6;
       transition: all 0.5s ease; }
-      /* line 73, ../scss/layout/_footer.scss */
+      /* line 74, ../scss/layout/_footer.scss */
       footer .social a:hover {
         opacity: 1; }
-      /* line 77, ../scss/layout/_footer.scss */
+      /* line 78, ../scss/layout/_footer.scss */
       footer .social a:last-child {
         margin-right: 0px; }
-    /* line 81, ../scss/layout/_footer.scss */
+    /* line 82, ../scss/layout/_footer.scss */
     footer .social .facebook {
-      background-image: url(../../images/sprite.png);
+      background-image: url(../images/sprite.png);
       background-position: 0px 0px;
       width: 36px;
       height: 36px; }
-    /* line 84, ../scss/layout/_footer.scss */
+    /* line 85, ../scss/layout/_footer.scss */
     footer .social .github {
-      background-image: url(../../images/sprite.png);
+      background-image: url(../images/sprite.png);
       background-position: -46px 0px;
       width: 36px;
       height: 36px; }
-    /* line 87, ../scss/layout/_footer.scss */
+    /* line 88, ../scss/layout/_footer.scss */
     footer .social .twitter {
-      background-image: url(../../images/sprite.png);
+      background-image: url(../images/sprite.png);
       background-position: 0px -46px;
       width: 36px;
       height: 36px; }
+  /* line 93, ../scss/layout/_footer.scss */
+  footer .designer, footer .designer a {
+    font-size: 14px;
+    color: #333; }
 
 /* line 1, ../scss/pages/_home.scss */
 .content, .team, .program {
@@ -819,65 +834,66 @@ footer {
     color: #FFE600;
     font-size: 20px;
     font-weight: 700;
-    line-height: 20px; }
-    /* line 26, ../scss/pages/_home.scss */
+    line-height: 20px;
+    transition: all 0.5s ease; }
+    /* line 27, ../scss/pages/_home.scss */
     .content .register img, .team .register img, .program .register img {
       display: inline-block;
       width: 70px;
       height: 94px;
       margin: 26px 0px 15px 0px; }
-      /* line 32, ../scss/pages/_home.scss */
+      /* line 33, ../scss/pages/_home.scss */
       .content .register img.dark, .team .register img.dark, .program .register img.dark {
         display: none; }
-    /* line 37, ../scss/pages/_home.scss */
+    /* line 38, ../scss/pages/_home.scss */
     .content .register:hover, .team .register:hover, .program .register:hover {
       background-color: #FFE600;
       color: #000; }
-      /* line 41, ../scss/pages/_home.scss */
+      /* line 42, ../scss/pages/_home.scss */
       .content .register:hover img.light, .team .register:hover img.light, .program .register:hover img.light {
         display: none; }
-      /* line 45, ../scss/pages/_home.scss */
+      /* line 46, ../scss/pages/_home.scss */
       .content .register:hover img.dark, .team .register:hover img.dark, .program .register:hover img.dark {
         display: inline-block; }
 
-/* line 52, ../scss/pages/_home.scss */
+/* line 53, ../scss/pages/_home.scss */
 .about {
   margin-top: 220px; }
 
-/* line 58, ../scss/pages/_home.scss */
+/* line 59, ../scss/pages/_home.scss */
 .team img {
   margin-top: 30px;
   width: 200px;
   height: 200px;
   border-radius: 75px; }
-/* line 64, ../scss/pages/_home.scss */
+/* line 65, ../scss/pages/_home.scss */
 .team .member {
   display: inline-block;
   margin-right: 20px; }
-  /* line 68, ../scss/pages/_home.scss */
+  /* line 69, ../scss/pages/_home.scss */
   .team .member:last-child {
     margin-right: 0px; }
-  /* line 71, ../scss/pages/_home.scss */
+  /* line 72, ../scss/pages/_home.scss */
   .team .member h2 {
     font-weight: 700;
     margin: 13px 0px 7px 0px;
     font-size: 16px; }
-  /* line 76, ../scss/pages/_home.scss */
+  /* line 77, ../scss/pages/_home.scss */
   .team .member span {
     color: #AFAFAF;
     font-size: 13px; }
-  /* line 81, ../scss/pages/_home.scss */
+  /* line 82, ../scss/pages/_home.scss */
   .team .member img {
     border: 1px solid #e7e7e7; }
 
-/* line 91, ../scss/pages/_home.scss */
+/* line 92, ../scss/pages/_home.scss */
 .program ul li {
   margin: 60px 0px 0px 0px; }
-  /* line 93, ../scss/pages/_home.scss */
+  /* line 94, ../scss/pages/_home.scss */
   .program ul li h2 {
     font-size: 25px;
     font-weight: 700; }
-  /* line 97, ../scss/pages/_home.scss */
+  /* line 98, ../scss/pages/_home.scss */
   .program ul li span {
     color: #AFAFAF;
     width: 100%;
@@ -886,16 +902,16 @@ footer {
     padding-bottom: 40px;
     border-bottom: 1px solid #EBEBEB;
     display: inline-block; }
-  /* line 107, ../scss/pages/_home.scss */
+  /* line 108, ../scss/pages/_home.scss */
   .program ul li p {
     margin-top: 20px; }
 
-/* line 113, ../scss/pages/_home.scss */
+/* line 114, ../scss/pages/_home.scss */
 #about .seperator, #program .seperator {
   height: 150px;
   margin: 50px auto; }
 
-/* line 117, ../scss/pages/_home.scss */
+/* line 118, ../scss/pages/_home.scss */
 #team .seperator {
   height: 200px;
   margin: 50px auto 0px auto; }
