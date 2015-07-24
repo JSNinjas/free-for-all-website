@@ -777,15 +777,18 @@ footer {
   .team .member span {
     color: #AFAFAF;
     font-size: 13px; }
+  /* line 58, ../scss/pages/_home.scss */
+  .team .member img {
+    border: 1px solid #e7e7e7; }
 
-/* line 63, ../scss/pages/_home.scss */
+/* line 68, ../scss/pages/_home.scss */
 .program ul li {
   margin: 60px 0px 0px 0px; }
-  /* line 65, ../scss/pages/_home.scss */
+  /* line 70, ../scss/pages/_home.scss */
   .program ul li h2 {
     font-size: 25px;
     font-weight: 700; }
-  /* line 69, ../scss/pages/_home.scss */
+  /* line 74, ../scss/pages/_home.scss */
   .program ul li span {
     color: #AFAFAF;
     width: 100%;
@@ -794,16 +797,16 @@ footer {
     padding-bottom: 40px;
     border-bottom: 1px solid #EBEBEB;
     display: inline-block; }
-  /* line 79, ../scss/pages/_home.scss */
+  /* line 84, ../scss/pages/_home.scss */
   .program ul li p {
     margin-top: 20px; }
 
-/* line 85, ../scss/pages/_home.scss */
+/* line 90, ../scss/pages/_home.scss */
 #about .seperator, #program .seperator {
   height: 150px;
   margin: 50px auto; }
 
-/* line 89, ../scss/pages/_home.scss */
+/* line 94, ../scss/pages/_home.scss */
 #team .seperator {
   height: 200px;
   margin: 50px auto 0px auto; }
