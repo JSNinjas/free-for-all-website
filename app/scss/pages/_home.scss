@@ -9,6 +9,7 @@
 	}
 
 	button {
+		cursor: pointer;
 		background: #000;
 		border-radius: 75px;
 		width: 200px;
@@ -16,12 +17,32 @@
 		border:none;
 		outline: none;
 		color: $yellow;
-		font-size: 15px;
+		font-size: 17px;
 		font-weight:700;
+		line-height: 17px;
 
 		img {
+			display: inline-block;
 			width: 70px;
+			height: 94px;
 			margin:20px 0px 15px 0px;
+
+			&.dark {
+				display: none;
+			}
+		}
+
+		&:hover {
+			background-color: $yellow;
+			color: #000;
+
+			img.light {
+				display: none;
+			}
+
+			img.dark {
+				display: inline-block;
+			}
 		}
 	}
 }

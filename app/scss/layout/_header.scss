@@ -12,7 +12,7 @@ header {
 			max-width: 200px;
 		}
 	}
-	
+
 	nav {
 		position: absolute;
 		bottom: 0px;
@@ -24,6 +24,10 @@ header {
 			margin-right: 50px;
 			font-weight: 600;
 			font-size: 14px;
+
+			&:hover {
+				color: $yellow;
+			}
 		}
 
 	}
@@ -37,6 +41,7 @@ header {
 	color:#AFAFAF;
 	margin: 15px 0px 20px 0px;
 }
+
 .nav-sep {
   position: absolute;
   right: 0;
