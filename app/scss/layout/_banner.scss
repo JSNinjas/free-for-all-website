@@ -34,9 +34,11 @@
 		margin: 0 auto 50px auto;
 	}
 
-	button{
+	.what-is {
+		display: inline-block;
 		margin: 0 auto 20px auto;
 		border-radius: 2px;
+		color: #000;
 
 		&:hover {
 			cursor: pointer;

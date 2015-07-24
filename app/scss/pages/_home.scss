@@ -8,7 +8,9 @@
 		line-height: 39px;
 	}
 
-	button {
+	.register {
+		display: block;
+		margin: 20px auto 0 auto;
 		cursor: pointer;
 		background: #000;
 		border-radius: 75px;
@@ -17,15 +19,15 @@
 		border:none;
 		outline: none;
 		color: $yellow;
-		font-size: 17px;
+		font-size: 20px;
 		font-weight:700;
-		line-height: 17px;
+		line-height: 20px;
 
 		img {
 			display: inline-block;
 			width: 70px;
 			height: 94px;
-			margin:20px 0px 15px 0px;
+			margin:26px 0px 15px 0px;
 
 			&.dark {
 				display: none;
