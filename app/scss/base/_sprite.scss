@@ -21,7 +21,7 @@ $fb-height: 36px;
 $fb-total-width: 82px;
 $fb-total-height: 82px;
 $fb-image: '../../images/sprite.png';
-$fb: (0px, 0px, 0px, 0px, 36px, 36px, 82px, 82px, '../images/sprite.png', 'fb', );
+$fb: (0px, 0px, 0px, 0px, 36px, 36px, 82px, 82px, '../../images/sprite.png', 'fb', );
 $git-name: 'git';
 $git-x: 46px;
 $git-y: 0px;
@@ -32,7 +32,7 @@ $git-height: 36px;
 $git-total-width: 82px;
 $git-total-height: 82px;
 $git-image: '../../images/sprite.png';
-$git: (46px, 0px, -46px, 0px, 36px, 36px, 82px, 82px, '../images/sprite.png', 'git', );
+$git: (46px, 0px, -46px, 0px, 36px, 36px, 82px, 82px, '../../images/sprite.png', 'git', );
 $tw-name: 'tw';
 $tw-x: 0px;
 $tw-y: 46px;
@@ -43,12 +43,12 @@ $tw-height: 36px;
 $tw-total-width: 82px;
 $tw-total-height: 82px;
 $tw-image: '../../images/sprite.png';
-$tw: (0px, 46px, 0px, -46px, 36px, 36px, 82px, 82px, '../images/sprite.png', 'tw', );
+$tw: (0px, 46px, 0px, -46px, 36px, 36px, 82px, 82px, '../../images/sprite.png', 'tw', );
 $spritesheet-width: 82px;
 $spritesheet-height: 82px;
 $spritesheet-image: '../../images/sprite.png';
 $spritesheet-sprites: ($fb, $git, $tw, );
-$spritesheet: (82px, 82px, '../images/sprite.png', $spritesheet-sprites, );
+$spritesheet: (82px, 82px, '../../images/sprite.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables
