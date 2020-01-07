@@ -36,6 +36,7 @@ module.exports = function (grunt) {
             src: 'images/sprite/*.png',
             dest: 'images/sprite.png',
             destCss: 'scss/base/_sprite.scss',
+            imgPath: '../images/sprite.png',
             cssFormat   : 'scss',
             padding     : 10
           }

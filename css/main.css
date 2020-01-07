@@ -790,19 +790,19 @@ footer {
         margin-right: 0px; }
     /* line 82, ../scss/layout/_footer.scss */
     footer .social .facebook {
-      background-image: url(../../images/sprite.png);
+      background-image: url(../images/sprite.png);
       background-position: 0px 0px;
       width: 36px;
       height: 36px; }
     /* line 85, ../scss/layout/_footer.scss */
     footer .social .github {
-      background-image: url(../../images/sprite.png);
+      background-image: url(../images/sprite.png);
       background-position: -46px 0px;
       width: 36px;
       height: 36px; }
     /* line 88, ../scss/layout/_footer.scss */
     footer .social .twitter {
-      background-image: url(../../images/sprite.png);
+      background-image: url(../images/sprite.png);
       background-position: 0px -46px;
       width: 36px;
       height: 36px; }
