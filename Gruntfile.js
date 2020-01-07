@@ -2,13 +2,13 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         watch: {
-            files: 'app/scss/**/*.scss',
+            files: 'scss/**/*.scss',
             tasks: ['sass']
         },
         sass: {
             dev: {
                 files: {
-                    'app/css/main.css': 'app/scss/main.scss'
+                    'css/main.css': 'scss/main.scss'
                 },
                 options: {
                     interrupt: false,
@@ -20,22 +20,22 @@ module.exports = function (grunt) {
             dev: {
                 bsFiles: {
                     src : [
-                        'app/css/*.css',
-                        'app/*.html'
+                        'css/*.css',
+                        '*.html'
                     ]
                 },
                 options: {
                     watchTask: true,
-                    server: './app'
+                    server: './'
                 }
             }
         },
 
         sprite:{
           all: {
-            src: 'app/images/sprite/*.png',
-            dest: 'app/images/sprite.png',
-            destCss: 'app/scss/base/_sprite.scss',
+            src: 'images/sprite/*.png',
+            dest: 'images/sprite.png',
+            destCss: 'scss/base/_sprite.scss',
             cssFormat   : 'scss',
             padding     : 10
           }
